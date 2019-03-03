@@ -28,15 +28,9 @@ module.exports = {
         use: [
           { loader: 'file-loader',
             options: {
-              name: '/assets/[name].[ext]'
+              name: '[path][name]-[hash:8].[ext]'
             },
          },
-         {
-          loader: 'url-loader',
-          options: {
-            limit: 8192
-          }
-        },
         ],
       },
       {
