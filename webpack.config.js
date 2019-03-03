@@ -1,13 +1,12 @@
 const path = require('path');
 const webpack = require('webpack');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
 
   output: {
     filename: 'bundle.js',
-    publicPath: './',
+    publicPath: './dist',
     path: path.join(__dirname, 'dist'),
   },
 
@@ -81,11 +80,6 @@ module.exports = {
   },
 
   plugins: [
-    
-    new HtmlWebpackPlugin({
-      template: './index.html',
-      filename: './index.html'
-    }),
 
     new webpack.ProvidePlugin({
       PropTypes: 'prop-types',
