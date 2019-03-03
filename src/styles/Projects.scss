@@ -193,6 +193,10 @@
                     position: relative;
                     transform: scale(1);
                     padding: 0;
+                    
+                    h3, p {
+                        color: $color-grey;
+                    }
 
                     p {
                         margin-top: 5px;

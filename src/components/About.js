@@ -12,6 +12,7 @@ const About = () => (
             <h1>About</h1>
         </div>
         <div className={styles['about__image']}>
+            <img src='src/assets/images/tokyo.jpg' alt="Tokyo, 2018" />
         </div>
         <div className={styles['about__main']}>
             <div className={styles['about__main__logos']}>
