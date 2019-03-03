@@ -6,7 +6,7 @@ module.exports = {
 
   output: {
     filename: 'bundle.js',
-    publicPath: './dist',
+    publicPath: './',
     path: path.join(__dirname, 'dist'),
   },
 
@@ -27,7 +27,7 @@ module.exports = {
         use: [
           { loader: 'file-loader',
             options: {
-              name: 'src/assets/images/[name].[ext]'
+              name: '/assets/[name].[ext]'
             },
          },
         ],
