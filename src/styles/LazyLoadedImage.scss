@@ -1,0 +1,27 @@
+.logo {
+  transition: transform 0.5s;
+
+  &--loading {
+    transform: scale(0);
+  }
+
+  &--loaded {
+    transform: scale(1);
+  }
+}
+
+.picture {
+  transition: opacity 0.3s, left 0.3s;
+  position: absolute;
+  top: 0;
+
+  &--loading {
+    opacity: 0;
+    left: -100%;
+  }
+
+  &--loaded {
+    opacity: 1;
+    left: 0;
+  }
+}

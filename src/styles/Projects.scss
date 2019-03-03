@@ -1,0 +1,217 @@
+.projects {
+    margin: 0 auto;
+    padding:  100px 0 4em;
+    min-height: 100vh;
+    list-style: none;
+    text-align: center;
+    background-color: $color-light-grey;
+
+    &__header {
+        padding-right: 100px;
+        
+        h1 {
+            color: $color-pink;
+            text-align: right;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+
+  &__body {
+      padding-top: 30px;
+
+    &__item {
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        margin: 10px 1%;
+        max-width: 380px;
+        max-height: 255px;
+        width: 50%;
+        height: auto;
+        text-align: center;
+        border-radius: 10px;
+        cursor: pointer;
+        border: 1px solid $color-light-grey;
+
+        &__details {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 68px;
+            z-index: 0;
+            transform: scale(0);
+            transition: transform 0.3s;
+            border-radius:10px;
+            border: 1px solid $color-light-grey;
+
+            h3, p {
+                text-align: center;
+                color: $color-light-grey;
+            }
+
+            p {
+                margin-top: 20px;
+            }
+            
+            &__link {
+                margin-top: 30px;
+                cursor: pointer;                
+
+                a {
+                    text-decoration: none;
+                                
+                    span {
+                        font-size: 18px;
+                        font-weight: 800;
+                        color: $color-pink;
+                        transition: color 0.2s;
+                        position: relative;
+                        text-transform: uppercase;
+
+                        &::after {
+                            content: '';               
+                            position: absolute;
+                            bottom: -2px;
+                            left: 0;
+                            width: 0;
+                            height: 2px;
+                            background: linear-gradient(to right, #ef32d9, #89fffd);
+                            transition: width 0.2s;
+                        }
+            
+                        &:hover {
+                            &::after {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &__image {
+            position: relative;
+            top: 0;
+            overflow: hidden;
+            z-index: 1;
+            box-shadow: 0px 0px 15px 2px $color-grey, inset 0.3px 1px 6px 3px $color-grey, inset 0 0 8px 0px $color-pink;
+            transition: opacity 0.5s, left 0.3s;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 6;
+                background: rgba(0, 0,	34, 0.3);
+                transition: background 0.3s;
+            }
+
+            &--loading {
+                left: -100%;
+                opacity: 0;
+            }
+
+            &--loaded {
+                left: 0;
+                opacity: 1;
+            }
+
+            img {
+                max-width: 100%;
+                opacity: 0.8;
+            }
+        }
+    }
+  }
+}
+
+
+//States
+.projects {
+    &__body {
+        &__item {
+            &:hover & {
+
+                &__image {
+                    //left: 100%;
+                    //transform: scale(0);
+                    //opacity: 0;
+
+                    &::before {
+                        background: rgba(0, 0,	34, 0.8);
+                    }
+                }
+    
+                &__details {
+                    transform: scale(1);
+                    z-index: 9;
+                }
+            }
+        }
+    }
+}
+
+
+
+//Media Queries
+@media (max-width: 768px) {
+    .projects {
+        margin-top: 0;
+
+        &__header {
+            padding: 0;
+
+            h1 {
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+@media(max-width: 1024px) {
+    .projects {
+
+        &__body {
+
+            &__item {
+                overflow: visible;
+
+                &:not(:first-of-type) {
+                    margin-top: 50px;
+                    padding-top: 30px;
+                }
+
+                &__details {
+                    margin-top: 10px;
+                    position: relative;
+                    transform: scale(1);
+                    padding: 0;
+
+                    p {
+                        margin-top: 5px;
+                    }
+
+                    &__link {
+                        margin-top: 20px;
+                        border: none;
+                    }
+                }
+
+                //State    
+                &:hover & {
+                    &__image {
+                        transform: scale(1);
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}

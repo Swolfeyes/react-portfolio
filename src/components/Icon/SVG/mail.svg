@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+	<defs>
+		<linearGradient id="grd1" gradientUnits="userSpaceOnUse"  x1="5.7" y1="50" x2="97.7" y2="50">
+			<stop offset="0" stop-color="#ef32d9"  />
+			<stop offset="1" stop-color="#89fffd"  />
+		</linearGradient>
+		<linearGradient id="grd2" gradientUnits="userSpaceOnUse"  x1="20.9" y1="50.15" x2="82.3" y2="50.15">
+			<stop offset="0" stop-color="#ef32d9"  />
+			<stop offset="1" stop-color="#89fffd"  />
+		</linearGradient>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: url(#grd1) } 
+		.shp1 { fill: url(#grd2) } 
+	</style>
+	<g id="Layer">
+		<path id="Layer" class="shp0" d="M97.7,50c0,25.4 -20.6,46 -46,46c-25.4,0 -46,-20.6 -46,-46c0,-25.4 20.6,-46 46,-46c25.4,0 46,20.6 46,46zM95.7,50c0,-24.3 -19.7,-44 -44,-44c-24.3,0 -44,19.7 -44,44c0,24.3 19.7,44 44,44c24.3,0 44,-19.7 44,-44z" />
+	</g>
+	<path id="Layer" class="shp1" d="M82.2,31.5v37.3c0,0.6 -0.4,1 -1,1h-59.3c-0.6,0 -1,-0.4 -1,-1c0,0 0,-37.6 0,-37.7c0,-0.1 0,-0.1 0.1,-0.2c0.1,0 0.1,-0.1 0.1,-0.1c0.1,-0.1 0.2,-0.2 0.3,-0.2c0.1,0 0.1,0 0.1,0c0.1,-0.1 0.3,-0.1 0.4,-0.1h59.5c0.1,0 0.2,0.1 0.3,0.1c0.1,0 0.1,0 0.1,0c0.1,0.1 0.2,0.1 0.3,0.2c0.1,0 0.1,0.1 0.1,0.1c0,0.1 0.1,0.1 0.1,0.2c0,0 0,0.1 0,0.2c0,0.1 0,0.1 -0.1,0.2zM24.4,32.5l27.2,26.3l27.2,-26.3zM80.3,67.9v-34l-28,27.1c-0.2,0.2 -0.4,0.3 -0.7,0.3c-0.3,0 -0.5,-0.1 -0.7,-0.3l-28,-27.1v34z" />
+</svg>

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
+
+.contact {
+  padding: 20px;
+  font-family: 'Major Mono Display', monospace;
+
+  &__main {
+    display: flex;
+    justify-content: center;
+
+  &__header {
+    padding: 50px 10px;
+    flex: 0 1 auto;
+    color: $color-light-blue;
+    font-size: 25px;
+    border-right: 1px solid $color-pink;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__mobile {
+      display: flex;
+      align-items: center;
+      padding-left: 10px;
+
+      &__icon {
+        width: 40px;
+        height: auto;
+
+          img {
+            max-width: 100%;
+          }
+        }
+
+          &__number {
+            margin-left: 10px;
+
+            p {
+              color: $color-light-blue;
+            }
+          }
+        }
+      }
+    }
+  }
+
+@media (max-width: 1024px) {
+  .contact {
+    background: $color-black;
+    height: 100vh;
+    position: relative;
+
+    &__main {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    &__main {
+      flex-direction: column;
+
+      &__header {
+        border-bottom: 1px solid $color-pink;
+        border-right: none;
+        text-align: center;
+        padding: 0 10px 20px 10px;
+
+        h2 {
+          font-size: 35px;
+        }
+      }
+
+      &__body {
+        padding-top: 10px;
+
+        &__mobile {
+          padding-left: 12px;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__item {
+    flex: 0 1 auto;
+    position: relative;
+    left: 0;
+    padding: 0 20px;
+    width: 150px;
+    height: auto;
+    overflow: hidden;
+    transition: top 0.3s, opacity 0.3s;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
+

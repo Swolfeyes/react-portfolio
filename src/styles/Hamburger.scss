@@ -1,0 +1,79 @@
+.hamburger {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+
+
+    &__top-layer, &__middle-layer, &__bottom-layer {
+        margin: 5px 0;
+        width: 30px;
+        height: 3px;
+        //background: $color-pink;
+        background: linear-gradient(to right, #ef32d9, #89fffd);
+        border-radius: 2px;
+        opacity: 1;
+        transform: translate(0, 0);
+        transition: transform 0.3s, background 0.3s;       
+    }
+
+    &:hover & {
+                            
+        &__top-layer {
+            transform: translate(0, -3px);
+        }
+
+        &__bottom-layer {
+            transform: translate(0, 3px);
+        }        
+    }
+}
+
+//State
+.hamburger {
+                                 
+    &__top-layer {
+        &--active {
+            transform: translate(0, -3px) rotate(45deg);
+            transform-origin: bottom left;
+        }
+    }
+
+    &__middle-layer {
+        &--active {
+            opacity: 0;
+        }
+    }
+
+    &__bottom-layer {
+        &--active {
+            transform: translate(0, 3px) rotate(-45deg);
+            transform-origin: top left;
+        }
+    }
+
+    &:hover & {
+                                
+        &__top-layer {
+            &--active {
+                transform: translate(0, -3px) rotate(45deg);
+                transform-origin: bottom left;
+            }
+        }
+
+        &__middle-layer{
+            &--active {
+                opacity: 0;
+            }
+        }
+
+        &__bottom-layer{
+            &--active {
+                transform: translate(0, 3px) rotate(-45deg);
+                transform-origin: top left;
+            }
+        }
+    }
+}

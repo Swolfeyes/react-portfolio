@@ -1,0 +1,65 @@
+[
+    {
+        "projectName": "React Audio Player",
+        "tech": ["ReactJs", "Scss"],
+        "image": {
+            "url": "src/assets/images/react-audio-player.png",
+            "alt": "React Audio Player"
+        },
+        "projectUrl": "https://swolfeyes.github.io/react-audio-player/"
+    },
+    {
+        "projectName": "Ethereum Debugger",
+        "tech": ["ReactJs", "Redux", "Scss"],
+        "image": {
+            "url": "src/assets/images/ethereum-debugger.png",
+            "alt": "Ethereum Debugger"
+        },
+        "projectUrl": "https://github.com/fergarrui/ethereum-graph-debugger"
+    },
+    {
+        "projectName": "Random Quote",
+        "tech": ["ReactJs", "Scss"],
+        "image": {
+            "url": "src/assets/images/random-quote-machine.png",
+            "alt": "Random Quote"
+        },
+        "projectUrl": "https://swolfeyes.github.io/react-random-quote-generator/"
+    },
+    {
+        "projectName": "Javascript Calculator",
+        "tech": ["HTML", "Scss", "JS"],
+        "image": {
+            "url": "src/assets/images/js-calculator.png",
+            "alt": "Javacript Calculator"
+        },
+        "projectUrl": "https://swolfeyes.github.io/js-calculator/"
+    }, 
+    {
+        "projectName": "Pomodoro Clock",
+        "tech": ["HTML", "Scss", "JS", "jQuery"],
+        "image": {
+            "url": "src/assets/images/js-pomodoro-clock.png",
+            "alt": "Pomodoro Clock"
+        },
+        "projectUrl": "https://swolfeyes.github.io/js-pomodoro-clock/"
+    },
+    {
+        "projectName": "Wikipedia Viewer",
+        "tech": ["HTML", "Scss", "JS", "jQuery"],
+        "image": {
+            "url": "src/assets/images/wikipedia-viewer.png",
+            "alt": "Wikipedia Viewer"
+        },
+        "projectUrl": "https://swolfeyes.github.io/wikipedia-viewer/"
+    },
+    {
+        "projectName": "Weather App",
+        "tech": ["ReactJs", "Scss"],
+        "image": {
+            "url": "src/assets/images/weather-app.png",
+            "alt": "Weather App"
+        },
+        "projectUrl": "https://swolfeyes.github.io/react-weather-app/"
+    }
+]
