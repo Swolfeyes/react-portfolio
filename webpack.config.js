@@ -7,7 +7,7 @@ module.exports = {
 
   output: {
     filename: 'bundle.js',
-    publicPath: './',
+    publicPath: './dist',
     path: path.join(__dirname, 'dist'),
   },
 
@@ -31,6 +31,12 @@ module.exports = {
               name: '/assets/[name].[ext]'
             },
          },
+         {
+          loader: 'url-loader',
+          options: {
+            limit: 8192
+          }
+        },
         ],
       },
       {
