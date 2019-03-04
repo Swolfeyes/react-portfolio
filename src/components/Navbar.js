@@ -24,18 +24,18 @@ const Navbar = ({ view, open, onNavItemClick, onIconClick }) => {
                 view === 'tablet&mobile' && <Hamburger onIconClick={onIconClick} clicked={!!open} />
             }
             <div onClick={onNavItemClick} className={styles['navbar__item']}>
-                <NavLink smooth to='/#home'><span>Home</span></NavLink>
+                <NavLink smooth to='#home'><span>Home</span></NavLink>
             </div>
             <div onClick={onNavItemClick} className={styles['navbar__item']}>
-                <NavLink smooth to='/about#sub'><span>About</span></NavLink>
+                <NavLink smooth to='about#sub'><span>About</span></NavLink>
             </div>
             <div onClick={onNavItemClick} className={styles['navbar__item']}>
-                <NavLink smooth to='/projects#projects'><span>Projects</span></NavLink>
+                <NavLink smooth to='projects#projects'><span>Projects</span></NavLink>
             </div>
             {
             view === 'tablet&mobile' &&
             <div onClick={onNavItemClick} className={styles['navbar__item']}>
-                <NavLink smooth to='/contact'><span>Contact</span></NavLink>
+                <NavLink smooth to='contact'><span>Contact</span></NavLink>
             </div>
             }
         </div>
