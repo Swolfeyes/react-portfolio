@@ -97,6 +97,7 @@
             top: 0;
             overflow: hidden;
             z-index: 1;
+            border-radius: 10px;
             box-shadow: 0px 0px 15px 2px $color-grey, inset 0.3px 1px 6px 3px $color-grey, inset 0 0 8px 0px $color-pink;
             transition: opacity 0.5s, left 0.3s;
 
@@ -139,9 +140,6 @@
             &:hover & {
 
                 &__image {
-                    //left: 100%;
-                    //transform: scale(0);
-                    //opacity: 0;
 
                     &::before {
                         background: rgba(0, 0,	34, 0.8);
@@ -160,7 +158,31 @@
 
 
 //Media Queries
-@media (max-width: 768px) {
+@media(max-width: 1024px) {
+    .projects {
+
+        &__body {
+
+            &__item {
+                
+                &__image {
+
+                    &::before {
+                        background: rgba(0, 0,	34, 0.6);
+                    }
+                }
+    
+                &__details {
+                    transform: scale(1);
+                    z-index: 9;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 678px) {
     .projects {
         margin-top: 0;
 
@@ -171,18 +193,12 @@
                 text-align: center;
             }
         }
-    }
-}
-
-
-@media(max-width: 1024px) {
-    .projects {
 
         &__body {
 
             &__item {
                 overflow: visible;
-
+                
                 &:not(:first-of-type) {
                     margin-top: 50px;
                     padding-top: 30px;
@@ -204,15 +220,6 @@
 
                     &__link {
                         margin-top: 20px;
-                        border: none;
-                    }
-                }
-
-                //State    
-                &:hover & {
-                    &__image {
-                        transform: scale(1);
-                        opacity: 1;
                     }
                 }
             }

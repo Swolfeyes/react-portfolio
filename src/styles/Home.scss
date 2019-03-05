@@ -16,7 +16,7 @@
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
         background-clip: text;
-        animation: rainbow 2s infinite;
+        animation: rainbow ease-in-out 3s infinite;
         animation-play-state: paused;
         cursor: pointer;
         font-family: 'Major Mono Display', monospace;
