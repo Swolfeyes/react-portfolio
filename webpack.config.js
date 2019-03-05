@@ -22,7 +22,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.jpg$/,
+        test: /\.(jpg|png)$/,
         include: path.join(__dirname, 'src'),
         exclude: path.resolve(__dirname, 'node_modules'),
         use: [
