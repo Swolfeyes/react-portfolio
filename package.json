@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://swolfeyes.github.io/react-portfolio",
   "scripts": {
     "test": "jest",
     "start": "webpack-dev-server --progress --mode=development",
