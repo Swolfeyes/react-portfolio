@@ -164,44 +164,6 @@
         &__body {
 
             &__item {
-                
-                &__image {
-
-                    &::before {
-                        background: rgba(0, 0,	34, 0.8);
-                    }
-                }
-    
-                &__details {
-                    transform: scale(1);
-                    z-index: 9;
-
-                    &__link {
-
-                        a {
-                            
-                            span {
-
-                                &::after {
-                                    width: 100%;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-
-@media (max-width: 768px) {
-    .projects {
-        margin-top: 0;
-
-        &__body {
-
-            &__item {
                 overflow: visible;
                 max-width: 250px;
                 
@@ -226,6 +188,15 @@
 
                     &__link {
                         margin-top: 20px;
+
+                        a {
+
+                            span {
+                                &::after {
+                                    width: 100%;
+                                }
+                            }
+                        }
                     }
                 }
 
@@ -250,4 +221,3 @@
         }
     }
 }
-
