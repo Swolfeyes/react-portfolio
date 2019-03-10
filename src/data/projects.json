@@ -1,17 +1,9 @@
-import audioPlayerImage from '../assets/images/react-audio-player.png';
-import ethereumDebuggerImage from "../assets/images/ethereum-debugger.png";
-import randomeQuoteImage from "../assets/images/random-quote-machine.png";
-import calculatorImage from "../assets/images/js-calculator.png";
-import pomodoroClockImage from "../assets/images/js-pomodoro-clock.png";
-import wikipediaViewerImage from "../assets/images/wikipedia-viewer.png";
-import weatherAppImage from "../assets/images/weather-app.png";
-
-export const projects = [
+[
     {
         "projectName": "React Audio Player",
         "tech": ["ReactJs", "Scss"],
         "image": {
-            "url": audioPlayerImage,
+            "url": "src/assets/images/react-audio-player.png",
             "alt": "React Audio Player"
         },
         "projectUrl": "https://swolfeyes.github.io/react-audio-player/"
@@ -20,7 +12,7 @@ export const projects = [
         "projectName": "Ethereum Debugger",
         "tech": ["ReactJs", "Redux", "Scss"],
         "image": {
-            "url": ethereumDebuggerImage,
+            "url": "src/assets/images/ethereum-debugger.png",
             "alt": "Ethereum Debugger"
         },
         "projectUrl": "https://github.com/fergarrui/ethereum-graph-debugger"
@@ -29,7 +21,7 @@ export const projects = [
         "projectName": "Random Quote",
         "tech": ["ReactJs", "Scss"],
         "image": {
-            "url": randomeQuoteImage,
+            "url": "src/assets/images/random-quote-machine.png",
             "alt": "Random Quote"
         },
         "projectUrl": "https://swolfeyes.github.io/react-random-quote-generator/"
@@ -38,7 +30,7 @@ export const projects = [
         "projectName": "Javascript Calculator",
         "tech": ["HTML", "Scss", "JS"],
         "image": {
-            "url": calculatorImage,
+            "url": "src/assets/images/js-calculator.png",
             "alt": "Javacript Calculator"
         },
         "projectUrl": "https://swolfeyes.github.io/js-calculator/"
@@ -47,7 +39,7 @@ export const projects = [
         "projectName": "Pomodoro Clock",
         "tech": ["HTML", "Scss", "JS", "jQuery"],
         "image": {
-            "url": pomodoroClockImage,
+            "url": "src/assets/images/js-pomodoro-clock.png",
             "alt": "Pomodoro Clock"
         },
         "projectUrl": "https://swolfeyes.github.io/js-pomodoro-clock/"
@@ -56,7 +48,7 @@ export const projects = [
         "projectName": "Wikipedia Viewer",
         "tech": ["HTML", "Scss", "JS", "jQuery"],
         "image": {
-            "url": wikipediaViewerImage,
+            "url": "src/assets/images/wikipedia-viewer.png",
             "alt": "Wikipedia Viewer"
         },
         "projectUrl": "https://swolfeyes.github.io/wikipedia-viewer/"
@@ -65,7 +57,7 @@ export const projects = [
         "projectName": "Weather App",
         "tech": ["ReactJs", "Scss"],
         "image": {
-            "url": weatherAppImage,
+            "url": "src/assets/images/weather-app.png",
             "alt": "Weather App"
         },
         "projectUrl": "https://swolfeyes.github.io/react-weather-app/"

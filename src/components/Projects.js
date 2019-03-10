@@ -2,7 +2,7 @@ import React from 'react';
 
 import LazyLoad from 'react-lazy-load';
 
-import { projects } from '../data/projects.js';
+import projects from '../data/projects.json';
 
 import classnames from 'classnames/bind';
 import styles from '../styles/Projects.scss';
@@ -43,7 +43,7 @@ class Projects extends React.Component {
                     projects.map((item, i) => {
                         return (
                             <div key={i} className={styles['projects__body__item']}>
-                                <LazyLoad width='100%' debounce={false} throttle={250} offsetVertical={-50}> 
+                                <LazyLoad width='100%' debounce={false} throttle={250} offsetVertical={-100}> 
                                     <div className={containerClasses}>
                                         <img 
                                             src={item.image.url} 
