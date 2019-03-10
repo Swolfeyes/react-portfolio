@@ -148,3 +148,29 @@
         }
     }
 }
+
+@supports (-ms-accelerator:true) {
+    .home {
+
+        &__main {
+            background: $color-black;
+
+            h1, h3 {
+                color: $color-lighter-blue;
+            }
+        }
+    }
+ }
+
+ @supports (-ms-ime-align:auto) {
+    .home {
+
+        &__main {
+            background: $color-black;
+
+            h1, h3 {
+                color: $color-lighter-blue;
+            }
+        }
+    }
+}
