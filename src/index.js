@@ -6,4 +6,4 @@ import App from './components/App';
 
 import styles from './styles/Reset.scss';
 
-ReactDOM.render(<HashRouter basename='/react-portfolio'><App /></HashRouter>, document.getElementById('root'));
+ReactDOM.render(<HashRouter><App /></HashRouter>, document.getElementById('root'));
