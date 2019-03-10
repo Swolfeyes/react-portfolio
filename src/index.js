@@ -6,4 +6,4 @@ import App from './components/App';
 
 import styles from './styles/Reset.scss';
 
-ReactDOM.render(<BrowserRouter><App /></BrowserRouter>, document.getElementById('root'));
+ReactDOM.render(<BrowserRouter basename='/react-portfolio'><App /></BrowserRouter>, document.getElementById('root'));

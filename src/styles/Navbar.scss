@@ -62,6 +62,12 @@
 
     #{$parent}__item {
         padding-top: 20px;
+
+        a {
+            &::after {
+                opacity: 0;
+            }
+        }
     }
 }
 

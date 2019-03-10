@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
 
 .home {
-    width: 100%;
+    //width: 100%;
     height: 100vh;
+    padding: 0 50px;
 
     &__main {
         position: absolute;
+        padding: 80px 0;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -21,6 +23,39 @@
         cursor: pointer;
         font-family: 'Major Mono Display', monospace;
 
+        &__animated-border {
+            position: absolute;
+            background: linear-gradient(to right, $color-light-blue, $color-pink);
+
+            &:nth-of-type(1) {
+                top: 0;
+                left: 0px;
+                height: 1px;
+                animation: animatedWidth 3s ease-in-out forwards;
+            }
+
+            &:nth-of-type(2) {
+                top: 0px;
+                right: 0;
+                width: 1px;
+                animation: animatedHeight 3s ease-in-out forwards;
+            }
+
+            &:nth-of-type(3) {
+                bottom: 0;
+                right: 0px;
+                height: 1px;
+                animation: animatedWidth 3s ease-in-out forwards;
+            }
+
+            &:nth-of-type(4) {
+                bottom: 0px;
+                left: 0;
+                width: 1px;
+                animation: animatedHeight 3s ease-in-out forwards;
+            }
+        }
+
         &:hover {
             animation-play-state: running;
         }
@@ -33,7 +68,7 @@
         h3 {
             font-size: 40px;
             text-align: center;
-            margin-top: 5px;
+            margin-top: 20px;
         }
 
         &__icons {
@@ -48,7 +83,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .home {
 
         &__main {
@@ -76,14 +111,26 @@
 }
 
 
-@media (max-width: 350px) {
+@media (max-width: 768px) {
     .home {
+        padding: 0 20px;
 
         &__main {
+            padding: 50px 25px;
 
             h1 {
                 font-size: 40px;
             }
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .home {
+        padding: 0;
+
+        &__main {
+            padding: 30px 15px;
         }
     }
 }
