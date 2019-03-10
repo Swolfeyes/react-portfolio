@@ -2,7 +2,7 @@ import React from 'react';
 
 import LazyLoad from 'react-lazy-load';
 
-import projects from '../data/projects.json';
+import { projects } from '../data/projects.js';
 
 import classnames from 'classnames/bind';
 import styles from '../styles/Projects.scss';

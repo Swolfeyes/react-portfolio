@@ -4,6 +4,8 @@ import ReactTypingEffect from 'react-typing-effect';
 import Logos from './Logos';
 import LazyLoadedImage from './LazyLoadedImage';
 
+import meInTokyo from '../assets/images/tokyo.jpg';
+
 import styles from '../styles/About.scss';
 
 const About = () => (
@@ -12,7 +14,7 @@ const About = () => (
             <h1>About</h1>
         </div>
         <div className={styles['about__image']}>
-            <LazyLoadedImage imageUrl='src/assets/images/tokyo.jpg' alt="Tokyo, 2018" type='picture' />
+            <LazyLoadedImage imageUrl={meInTokyo} alt="Tokyo, 2018" type='picture' />
         </div>
         <div className={styles['about__main']}>
             <div className={styles['about__main__logos']}>
