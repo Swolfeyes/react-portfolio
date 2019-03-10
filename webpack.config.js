@@ -26,7 +26,7 @@ module.exports = {
         include: path.join(__dirname, 'src'),
         exclude: path.resolve(__dirname, 'node_modules'),
         use: [
-          { loader: 'file-loader',
+          { loader: 'url-loader',
             options: {
               name: '[path][name].[ext]'
             },
