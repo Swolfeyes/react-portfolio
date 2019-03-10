@@ -2,6 +2,8 @@ import React from 'react';
 
 import SocialIcons from './SocialIcons';
 
+import mobileIcon from '../assets/icons/mobile.png';
+
 import styles from '../styles/Contact.scss';
 
 const Contact = () => (
@@ -16,7 +18,7 @@ const Contact = () => (
         </div>
         <div className={styles['contact__main__body__mobile']}>
           <div className={styles['contact__main__body__mobile__icon']}>
-            <img src='src/assets/icons/mobile.png' alt='Mobile' />
+            <img src={mobileIcon} alt='Mobile' />
           </div>
           <div className={styles['contact__main__body__mobile__number']}>
             <p>+44 7448484071</p>

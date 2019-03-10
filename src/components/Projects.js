@@ -43,7 +43,7 @@ class Projects extends React.Component {
                     projects.map((item, i) => {
                         return (
                             <div key={i} className={styles['projects__body__item']}>
-                                <LazyLoad width='100%' debounce={false} throttle={250} offsetVertical={-100}> 
+                                <LazyLoad width='100%' debounce={false} throttle={250} offsetVertical={-50}> 
                                     <div className={containerClasses}>
                                         <img 
                                             src={item.image.url} 

@@ -99,7 +99,7 @@
             z-index: 1;
             border-radius: 10px;
             box-shadow: 0px 0px 15px 2px $color-grey, inset 0.3px 1px 6px 3px $color-grey, inset 0 0 8px 0px $color-pink;
-            transition: opacity 0.5s, left 0.3s;
+            transition: opacity 0.3s, left 0.3s;
 
             &::before {
                 content: '';
