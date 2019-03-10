@@ -11,8 +11,12 @@ const Home = () => (
 				<span className={styles['home__main__animated-border']}></span>
 				<span className={styles['home__main__animated-border']}></span>
 				<span className={styles['home__main__animated-border']}></span>
-				<h1>Stefania Occhilupo</h1>
-				<h3>Front End Developer</h3>
+				<div className={styles['home__main__name']}>
+					<h1>Stefania Occhilupo</h1>
+				</div>
+				<div className={styles['home__main__occupation']}>
+					<h3>Front End Developer</h3>
+				</div>
 				<div className={styles['home__main__icons']}>
 					<SocialIcons />
 				</div>
