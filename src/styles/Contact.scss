@@ -9,7 +9,7 @@
     justify-content: center;
 
   &__header {
-    padding: 50px 10px;
+    padding: 50px 30px;
     flex: 0 1 auto;
     color: $color-light-blue;
     font-size: 25px;
@@ -24,7 +24,7 @@
     &__mobile {
       display: flex;
       align-items: center;
-      padding-left: 10px;
+      padding-left: 30px;
 
       &__icon {
         width: 40px;
@@ -71,18 +71,19 @@
         border-bottom: 1px solid $color-pink;
         border-right: none;
         text-align: center;
-        padding: 0 10px 20px 10px;
+        padding: 0 70px 40px 70px;
 
         h2 {
           font-size: 35px;
+          line-height: 45px;
         }
       }
 
       &__body {
-        padding-top: 10px;
+        padding-top: 40px;
 
         &__mobile {
-          padding-left: 12px;
+          padding: 20px 0 0 12px;
           justify-content: center;
         }
       }

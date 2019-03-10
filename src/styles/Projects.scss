@@ -7,11 +7,10 @@
     background-color: $color-light-grey;
 
     &__header {
-        padding-right: 100px;
         
         h1 {
             color: $color-pink;
-            text-align: right;
+            text-align: center;
             font-weight: bold;
             text-transform: uppercase;
         }
@@ -25,6 +24,7 @@
         position: relative;
         overflow: hidden;
         margin: 10px 1%;
+        min-width: 253px;
         max-width: 380px;
         max-height: 255px;
         width: 50%;
@@ -175,6 +175,19 @@
                 &__details {
                     transform: scale(1);
                     z-index: 9;
+
+                    &__link {
+
+                        a {
+                            
+                            span {
+
+                                &::after {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -182,22 +195,15 @@
 }
 
 
-@media (max-width: 678px) {
+@media (max-width: 768px) {
     .projects {
         margin-top: 0;
-
-        &__header {
-            padding: 0;
-
-            h1 {
-                text-align: center;
-            }
-        }
 
         &__body {
 
             &__item {
                 overflow: visible;
+                max-width: 250px;
                 
                 &:not(:first-of-type) {
                     margin-top: 50px;
@@ -223,7 +229,15 @@
                     }
                 }
 
-                &:hover {
+                &__image {
+                    max-height: 168.42px;
+
+                    &::before {
+                        background:  rgba(0, 0,	34, 0.3);
+                    }
+                }
+
+                &:hover & {
 
                     &__image {
 
@@ -236,3 +250,4 @@
         }
     }
 }
+
