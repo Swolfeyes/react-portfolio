@@ -16,6 +16,8 @@
             position: relative;
             text-decoration: none;
             color: $color-lighter-blue;
+            cursor: pointer;
+            transition: color 0.2s ease-in-out;
             
             &::after {
                 content: '';               
@@ -72,4 +74,51 @@
 }
 
 
+//Target Internet Explorer only
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .navbar {
+        &__item {
+            a {
+                &:hover {
+                    color: $color-pink;
 
+                    &::after {
+                        width: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@supports (-ms-accelerator:true) {
+    .navbar {
+        &__item {
+            a {
+                color: $color-pink;
+
+                &:hover {
+                    &::after {
+                        width: 0;
+                    }
+                }
+            }
+        }
+    }
+ }
+
+ @supports (-ms-ime-align:auto) {
+    .navbar {
+        &__item {
+            a {
+                color: $color-pink;
+
+                &:hover {
+                    &::after {
+                        width: 0;
+                    }
+                }
+            }
+        }
+    }
+}

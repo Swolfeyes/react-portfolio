@@ -190,7 +190,6 @@
                         margin-top: 20px;
 
                         a {
-
                             span {
                                 &::after {
                                     width: 100%;
@@ -214,6 +213,68 @@
 
                         &::before {
                             background:  rgba(0, 0,	34, 0.3);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//Target Internet Explorer only
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .projects {
+        &__body {
+            &__item {
+                &__details {
+                    &__link {
+                        a {
+                            span {
+                                &::after {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@supports (-ms-accelerator:true) {
+    .projects {
+        &__body {
+            &__item {
+                &__details {
+                    &__link {
+                        a {
+                            span {
+                                &::after {
+                                    width: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+ }
+
+ @supports (-ms-ime-align:auto) {
+    .projects {
+        &__body {
+            &__item {
+                &__details {
+                    &__link {
+                        a {
+                            span {
+                                &::after {
+                                    width: 0;
+                                }
+                            }
                         }
                     }
                 }

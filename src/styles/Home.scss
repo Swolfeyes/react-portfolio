@@ -143,6 +143,8 @@
     }
 }
 
+
+//Target Internet Explorer only
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .home {
 
@@ -150,7 +152,7 @@
             background: $color-black;
 
             h1, h3 {
-                color: $color-lighter-blue;
+                color: $color-light-blue;
             }
         }
     }
@@ -163,7 +165,7 @@
             background: $color-black;
 
             h1, h3 {
-                color: $color-lighter-blue;
+                color: $color-light-blue;
             }
         }
     }
@@ -176,7 +178,23 @@
             background: $color-black;
 
             h1, h3 {
-                color: $color-lighter-blue;
+                color: $color-light-blue;
+            }
+        }
+    }
+}
+
+// Target Firefox only
+@supports (-moz-appearance:none) {
+    .home {
+
+        &__main {
+            background: $color-black;
+            -webkit-text-fill-color: $color-light-blue;
+            text-fill-color: $color-light-blue;
+
+            h1, h3 {
+                color: $color-light-blue;
             }
         }
     }
