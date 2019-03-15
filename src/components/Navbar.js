@@ -41,7 +41,7 @@ const Navbar = ({ view, open, onNavItemClick, onIconClick }) => {
         <div className={navbarClasses}>
             <Hamburger onIconClick={onIconClick} clicked={!!open} />
             <div onClick={onNavItemClick} className={styles['navbar__item']}>
-                <NavLink to='/home'><span>Home</span></NavLink>
+                <NavLink to='/'><span>Home</span></NavLink>
             </div>
             <div onClick={onNavItemClick} className={styles['navbar__item']}>
                 <NavLink to='/about'><span>About</span></NavLink>
